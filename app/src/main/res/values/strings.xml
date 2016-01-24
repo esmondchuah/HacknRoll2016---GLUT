@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Glut</string>
+    <string name="title_activity_main">Glut</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Account Settings</string>
+    <string name="Search">search</string>
+    <string name="filter">filter</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="summary">summary</string>
+    <string name="title_activity_summary">SummaryActivity</string>
+    <string name="title_activity_new_delivery">NewDeliveryActivity</string>
+
+    <string name="title_activity_food_order">FoodOrder</string>
+    <string name="confirm">confirm</string>
+
+    <string name="facebook_app_id">1068248226548088</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Confused</item>
+    </string-array>
+    <string name="title_activity_chat">ChatActivity</string>
+
+</resources>

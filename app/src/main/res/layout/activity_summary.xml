@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shiping.glut.SummaryActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:background="#B0BEC5"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Your Purchases: "
+            android:textSize="18dp"
+            android:id="@+id/summaryPurchases"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="160dp"
+            android:id="@+id/summaryFoodName"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/summaryPurchases"
+            android:text="No order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryFoodBuyCost"
+            android:layout_below="@+id/summaryFoodName"
+            android:text="No order"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="90dp"
+            android:id="@+id/summaryFrom"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/summaryPurchases"
+            android:layout_toEndOf="@+id/summaryFoodName"
+            android:text="No order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryRate"
+            android:text="Rate Deliverer"
+            android:layout_marginRight="10dp"
+            android:onClick="rate"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/summaryContact"
+            android:layout_toStartOf="@+id/summaryContact" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryReport"
+            android:text="Report"
+            android:onClick="report"
+            android:textColor="#FF0000"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginRight="12dp"
+            android:layout_below="@+id/summaryPurchases"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryContact"
+            android:onClick="chat"
+            android:text="Message"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginRight="12dp"
+            android:layout_below="@+id/summaryFoodName"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:background="#80CBC4"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/summaryDeliveries"
+            android:textSize="18dp"
+            android:text="Your Deliveries: " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryFoodName2"
+            android:minWidth="180dp"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/summaryDeliveries"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryDeliveryQty"
+            android:layout_toEndOf="@+id/summaryFoodName2"
+            android:layout_below="@+id/summaryDeliveries"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryTotalCost"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/summaryDeliveries"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryBuyerName"
+            android:layout_below="@+id/summaryDeliveryQty"
+            android:layout_alignStart="@id/summaryDeliveryQty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/summaryContact2"
+            android:layout_marginRight="12dp"
+            android:text="Message"
+            android:onClick="chat"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/summaryFoodName2"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

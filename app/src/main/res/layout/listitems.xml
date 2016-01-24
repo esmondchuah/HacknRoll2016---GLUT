@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:padding="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/account"
+            android:layout_marginRight="16dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/person_photo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/account_name"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/person_photo"
+                android:textSize="10sp"
+                />
+            <!--<RatingBar-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_below="@id/account_name"-->
+            <!--/>-->
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/food_name"
+            android:layout_toRightOf="@+id/account"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:layout_toRightOf="@+id/account"
+            android:layout_below="@+id/food_name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eta"
+            android:layout_toRightOf="@+id/account"
+            android:layout_below="@+id/location"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distance"
+            android:layout_alignParentEnd="true"
+            android:layout_alignRight="@+id/food_name"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_above="@+id/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order"
+            android:text="ORDER"
+            android:clickable="true"
+            android:onClick="onClickOrder"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/location" />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
